@@ -1,4 +1,4 @@
-# eCommerce Follow-Along Project
+# ECommerce Follow-Along Project
 
 ## Overview
 This is a follow-along eCommerce project designed to help developers understand and implement core functionalities of an online store. The project includes user authentication, product listing, shopping cart management, order processing, and payment integration.
@@ -65,9 +65,12 @@ If you'd like to contribute:
 3. Commit your changes.
 4. Submit a pull request.
 
-## License
-This project is licensed under the MIT License.
+# Milestone 1:
+* Complete foundation for E-commerce Application
 
-## Contact
-For any issues or questions, feel free to reach out to `XYZ123@example.com` or create an issue in the repository.
+# Milestone 2:
+* Separate folders for frontend and backend.
+* A functional ligin page in the frontend.
+* Complete setting for teilwind-Css.
+
 
