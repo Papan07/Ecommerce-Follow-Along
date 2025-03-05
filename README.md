@@ -78,4 +78,9 @@ If you'd like to contribute:
 * Connected the **server to MongoDB** using Mongoose.
 * Implement **error-handling middleware** for API stability.
 
+# Milestone 4:
+* Create the **User model** in mongoose to define user data structure.
+* develop the **User controller** to manegr user authentication(signup,login).
+* Implemented **Multer for file handling** allowing user profile and product images uploads.
+
 
