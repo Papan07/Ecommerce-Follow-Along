@@ -73,4 +73,9 @@ If you'd like to contribute:
 * A functional ligin page in the frontend.
 * Complete setting for teilwind-Css.
 
+# Milestone 3:
+* Organized the **backend** for scalability.
+* Connected the **server to MongoDB** using Mongoose.
+* Implement **error-handling middleware** for API stability.
+
 
