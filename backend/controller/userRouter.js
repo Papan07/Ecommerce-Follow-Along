@@ -5,6 +5,7 @@ const userRouter = express.Router();
 const uploadUserImage = require("../middlewares/multer");
 
 const {userModel} = require("../models/userModel");
+const bcrypt = require("bcryptjs");
 
 userRouter.post ("/signup",uploadUserImage.single("image"),async(request,response)=>{
     try{
@@ -16,7 +17,11 @@ userRouter.post ("/signup",uploadUserImage.single("image"),async(request,respons
         if (user){
             return response.status(200).send({msg:"User already exists"});
         }
-        const newUser = await userModel.insertOne({name,email,password});
+
+        const salt=bcrypt.genSaltSync(10);
+        const hash=bcrypt.hashSync(password,salt);
+
+        const newUser = await userModel.insertOne({name,email,password:hash});
 
         return response.status(200).send({message:"User registered successfully"});
     }
@@ -31,10 +36,13 @@ userModel.post("/login",async(request,response)=>{
         if(email!="" || password!=""){
             return response.status(400).send({msg:"All fields are required"});
         }
-        const user = await userModel.finddOne({email:email,password:password});
-        if (user){
+
+        const user = await userModel.finddOne({email});
+        const matchedPass=bcrypt.compareSync(password,hash);
+        if (user && matchedPass){
             return response.status(200).send({msg:"User already exists"});
         }
+        return response.status(401).send({msg:"Entered details are wrong"});
     }
     catch(error){
         return response.status(500).send({msg:"Something went wrong!"});
