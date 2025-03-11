@@ -1,46 +1,44 @@
-const express = require('express');
+const express = require("express");
+
 const userRouter = express.Router();
-const uploadUserImage = require('../middleware/multer');
-const {userModel} = require('../models/userModel');
 
-userRouter.post('/signin',async(req, res) => {
+const uploadUserImage = require("../middlewares/multer");
+
+const {userModel} = require("../models/userModel");
+
+userRouter.post ("/signup",uploadUserImage.single("image"),async(request,response)=>{
     try{
-        const {name, email, password, image} = req.body;
-        if(name!= "" || email!="" || password!="" || image!=""){
-            return res.status(400).send({message:"All fields are required"});
+        const {name,email,password} = request.body;
+        if(name!="" || email!="" || password!=""){
+            return response.status(400).send({msg:"All fields are required"});
         }
-        const user=await userModel.findOne({email:email});
-        if(user){
-            return res.status(200).send({message:"User already exists"});
+        const user = userModel.finddOne({email:email});
+        if (user){
+            return response.status(200).send({msg:"User already exists"});
         }
-        const newUser = await userModel.insertOne({name, email, password});
-        return res.status(200).send({message:"User created successfully", user:newUser});
+        const newUser = await userModel.insertOne({name,email,password});
 
-    }catch(err){
-      return res.status(500).send({message:"Somethiing went wrong"});
+        return response.status(200).send({message:"User registered successfully"});
     }
-});
+    catch (error){
+        return response.status(500).send({msg:"Something went wrong!"});
+    }
+})
 
-userModel.post('/login',async(req, res) => {
+userModel.post("/login",async(request,response)=>{
     try{
-        const {email, password} = req.body;
-        if(email!= "" || password!=""){
-            return res.status(400).send({message:"All fields are required"});
+        const {email,password} = request.body;
+        if(email!="" || password!=""){
+            return response.status(400).send({msg:"All fields are required"});
         }
-        const user=await userModel.findOne({email:email, password:password});
-        if(!user){
-            return res.status(401).send({message:"Invalid credentials"});
+        const user = await userModel.finddOne({email:email,password:password});
+        if (user){
+            return response.status(200).send({msg:"User already exists"});
         }
-        return res.status(200).send({message:"Logged in successfully", user});
-
-    }catch(err){
-        return res.status(500).send({message:"Somethiing went wrong"});
-
     }
-});
-
-
-
-
+    catch(error){
+        return response.status(500).send({msg:"Something went wrong!"});
+    }
+})
 
 module.exports = userRouter;

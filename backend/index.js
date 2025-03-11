@@ -1,24 +1,25 @@
-const express = require('express');
+const express = require("express");
 const app = express();
-const connect = require('./mongoDB');
-const userRouter = require('./controller/userRouter');
+const connect = require("./mongoDB");
+const userRouter = require("./controller/userRouter");
 
-app.get('/', (req, res) => {
+app.get("/",(request,response)=>{
     try{
-        res.status(200).send({message:"This is Ecommerce-code-along-backend"});
-
-    }catch(error){
-        res.status(500).send({message:"Internal server error"});
+        response.status(200).send({msg:"E-commerce code along backend"});
     }
-});
+    catch (error) {
+        response.status(500).send({msg:"Something went wrong"});
+    }
+})
 
-app.use("/user", userRouter);
-app.listen(8000,async () => {
+app.use("./user",userRouter)
+
+app.listen(8000,async()=>{
     try{
         await connect();
-        console.log("server connected successfully");
-
-    }catch(error){
-        console.log("Server error: ", error);
+        console.log("Server connected");
     }
-}); 
+    catch (error) {
+        console.log("Server not connected",error);
+    }
+})

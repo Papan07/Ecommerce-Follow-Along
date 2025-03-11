@@ -1,40 +1,45 @@
-import React from 'react'
-import { useState } from 'react'
+import React, { useState } from 'react'
+import './Login.css'
 
 const Login = () => {
-    const[loginData, setLoginData] = useState({
-        email: '',
-        password: ''
+
+    const[loginData,setLoginData] = useState({
+        email:"",
+        password:"",
     })
 
     function handleInput(e){
-        setLoginData({...loginData, [e.target.name]: e.target.value})
+        setLoginData({...loginData,[e.target.name]:e.target.value})
     }
-   
-   
-    function handleLogin(event) {
-        event.preventDefault()
-        if(loginData.email==""){
-            alert("please enter your email...")
-            return;
-        }
-        if(loginData.password==""){
-            alert("please enter your password...")
+
+    function handleLogin(event){
+        event.preventDefault();
+        if(!loginData.email){
+            alert("Please enter email...");
             return;
         }
 
-        alert("you are successfully logged in...")
-    }
+        if(!loginData.password){
+            alert("Please enter Password...");
+            return;
+        }
 
+        alert("Youre successfully logged in!!");
+    }
+    
   return (
-    <div>
+    <div className='body'>
+        <h1>Sign in</h1>
         <form onSubmit={handleLogin}>
-           <label htmlFor="">Email</label>
-           <input type = "email" name="email" onChange={handleInput} placeholder='Email...'/>
-           <label>password</label>
-              <input type = "password" name="password" onChange={handleInput} placeholder='password...'/>
-                <button type="submit">Login</button>
-
+            <label htmlFor="">Enter Email</label>
+            <br />
+            <input type="email" value={loginData.email} name='email' onChange={handleInput} placeholder='Email...' />
+            <br />
+            <label htmlFor="">Enter Password</label>
+            <br />
+            <input type="password" value={loginData.password} name='password' onChange={handleInput} placeholder='Password...'/>
+            <br />
+            <input type="submit" />
         </form>
     </div>
   )
