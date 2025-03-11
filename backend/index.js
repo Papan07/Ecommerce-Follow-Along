@@ -12,7 +12,7 @@ app.get("/",(request,response)=>{
     }
 })
 
-app.use("./user",userRouter)
+app.use("/user",userRouter)
 
 app.listen(8000,async()=>{
     try{
