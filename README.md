@@ -99,6 +99,11 @@ In Milestone 7, we focused on secure user login. This involved validating user c
 * Created the card component and Design a reusable card component with props for product details.
 * Design the homepage layout and Set up a grid layout or flexbox for displaying multiple cards neatly.
 
+# Milestone 9: **create a form for product upload**
+* Created the **AddProducts** page in Frontend.
+* Added form validations in AddProducts page.
+
+
 
 
 

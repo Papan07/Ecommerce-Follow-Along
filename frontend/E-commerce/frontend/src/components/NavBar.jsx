@@ -12,6 +12,9 @@ const NavBar = () => {
             <h1>Home</h1>
         </div>
         <div>
+            <p onClick={()={
+                navigate("/addproducts")
+            }}>Add products</p>
             <div onClick={()=>{
                 navigate('/Login')
             }}>Login</div>
