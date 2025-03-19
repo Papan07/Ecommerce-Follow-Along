@@ -91,6 +91,13 @@ If you'd like to contribute:
 * added the **password encryption** in backend signup page.
 * added comparision for checking password is correct or not in login backend.
 
+# Milestone 7:
+### Overview
+In Milestone 7, we focused on secure user login. This involved validating user credentials and verifying the encrypted password stored in the database to ensure safe and secure authentication.
+
+# Milestone 8:
+* Created the card component and Design a reusable card component with props for product details.
+* Design the homepage layout and Set up a grid layout or flexbox for displaying multiple cards neatly.
 
 
 
