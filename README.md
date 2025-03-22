@@ -113,6 +113,11 @@ In Milestone 7, we focused on secure user login. This involved validating user c
 * added the **backend** part for handeling products(created end points to get products).
 * handeled file uploads by multer inside middleware multer.
 
+# Milestone 12: **Showing product according to user**
+* Created **home page** for dynamic products presentation according to user mail.
+* added the **backend** for specific user products.
+*
+
 
 
 
