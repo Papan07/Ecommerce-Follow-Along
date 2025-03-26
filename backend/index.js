@@ -10,6 +10,8 @@ const PORT = process.env.PORT || 8080;
 const connect = require('./mongoDB');
 const userRouter = require('./controller/userRouter');
 const productRouter = require('./controller/productRouter');
+const jwt = require('jsonwebtoken');
+const userModel = require('./model/userModel');
 
 
 app.get("/",(request, response) => {
@@ -28,5 +30,25 @@ app.listen(8000,async() => {
         console.log("server connected");
     } catch (error) {
         console.log("server not connected",error);
+    }
+})
+
+
+app.use("/product",async(req,res) =>{
+    try{
+        const auth=req.headers.authorization;
+        if(!auth){
+            return res.status(401).send({message:"Please login first"});
+        }
+        const decoded=jwt.verify(auth,process.env.JWT_PASSWORD);
+        const user=await userModel.findOne({_id:decoded.id});
+        if(!user){
+            return res.status(401).send({message:"Invalid token"});
+        }
+        console.log(decoded);
+
+    }catch(error){
+        return res.status(500).send({message:"something went wrong"})
+
     }
 })

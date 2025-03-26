@@ -116,7 +116,10 @@ In Milestone 7, we focused on secure user login. This involved validating user c
 # Milestone 12: **Showing product according to user**
 * Created **home page** for dynamic products presentation according to user mail.
 * added the **backend** for specific user products.
-*
+
+# Milestone 13: **Created product update**
+* Created **Product Update Endpoint** for updating products.
+* Created form for updating data in frontend and created autofil function.
 
 
 
