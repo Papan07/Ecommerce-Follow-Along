@@ -121,6 +121,10 @@ In Milestone 7, we focused on secure user login. This involved validating user c
 * Created **Product Update Endpoint** for updating products.
 * Created form for updating data in frontend and created autofil function.
 
+# Milestone 14:
+* Created **Product Delete Endpoint** for updating products.
+* Created form for deleting data in frontend.
+
 
 
 

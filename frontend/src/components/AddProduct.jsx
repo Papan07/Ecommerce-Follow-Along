@@ -6,9 +6,9 @@ import axios from 'axios'
 const AddProduct = () => {
     const [noOfImages, setNoOfImages] = useState(new Array(1).fill(1));
     const [productDetails,setProductDetails] = useState({
-        name:"",
-        email:"",
-        password:""
+        title:"",
+        description:"",
+        price:""
     });
     const [productImages,setProductImages] = useState([]);
 
@@ -77,6 +77,7 @@ const AddProduct = () => {
                     }} />
                 ))
             }
+            <input type="submit" value={"Upload Product"}/>
         </form>
     </div>
   )

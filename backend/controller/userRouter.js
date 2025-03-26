@@ -43,7 +43,7 @@ userRouter.post("/signup", async (req, res) => {
                 password: hashedPassword, 
                 image: imageUrl 
             });
-            return res.status(201).json({ message: "User registered successfully", token:token });
+            return res.status(201).json({ message: "User registered successfully", token:token, name, id:newUser.id  });
         });
     } catch (error) {
         console.error("Signup Error:", error);
