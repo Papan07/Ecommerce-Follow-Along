@@ -28,6 +28,8 @@ const useRouter = require("./controller/userRouter");
 
 const productRouter = require("./controller/productRouter");
 
+const allProductRouter = require("./controller/allProducts");
+
 
 app.get("/",(req,res)=>{
     try {
