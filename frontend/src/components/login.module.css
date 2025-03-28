@@ -5,8 +5,7 @@
     padding: 2rem;
 }
 
-.formbox *{
+.formbox > *{
     display: block;
     margin: auto;
 }
-
