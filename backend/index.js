@@ -73,5 +73,7 @@ app.listen(PORT,async ()=>{
     }
 });
 
+app.use("/uploads",express.static(path.join(__dirname,"uploads")));
+
 
 
