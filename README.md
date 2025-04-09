@@ -146,6 +146,6 @@ If you'd like to contribute:
 ✅ Created end backend ***CRUD*** for handling cart.
 ✅ handle quantity for producct in cart.
 
-### **🛠️ Milestone 17: Frontend for cart page** 
+### **🛠️ Milestone 18: Frontend for cart page** 
 ✅ Created cart page in frontend.
 ✅ Handled cart operations from frontend.
