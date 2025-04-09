@@ -6,7 +6,7 @@
 }
 
 .formbox *{
-    display: block;
     margin: auto;
+    display: block;
+    
 }
-
