@@ -1,20 +1,18 @@
 .formbox{
-  border: 5px solid blue;
-  margin: auto;
-  align-items: center;
-  align-content: center;
-  padding: 0.5rem;
-  width: max-content;
+    border: 5px solid blue;
+    margin: auto;
+    align-items: center;
+    align-content: center;
+    width: max-content;
+    padding: 0.5rem;
 }
 
-  
-  .formbox > *{
-    display:block;
+.formbox  *{
+    display: block;
     margin: auto;
-  }
+}
 
-  .formbox >input{
+.formbox > input{
     display: flex;
     justify-content: start;
-  }
-  
+}
