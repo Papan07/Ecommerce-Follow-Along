@@ -153,6 +153,12 @@ If you'd like to contribute:
 ### **🛠️ Milestone 19: Backend endpoint for cart item quantity** 
 ✅ Created put request for updating quantity for cart item.
 
-### **🛠️ Milestone 19: Backend endpoint for UserDetailsrt** 
+### **🛠️ Milestone 20: Backend endpoint for UserDetailsrt** 
 ✅ Created endpoint for userDetais in backend.
 ✅ Created User.jsx for user details in frontend.
+
+### **🛠️ Milestone 21: Created frontend for Address** 
+✅ Created route for Add Address Page in Frontend.
+✅ Create from for adding address.
+✅ stored address using useState Hook.
+
