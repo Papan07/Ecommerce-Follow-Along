@@ -159,6 +159,10 @@ If you'd like to contribute:
 
 ### **🛠️ Milestone 21: Created frontend for Address** 
 ✅ Created route for Add Address Page in Frontend.
-✅ Create from for adding address.
+✅ Create form for adding address.
 ✅ stored address using useState Hook.
+
+### **🛠️ Milestone 22: Created backend for Address and attach with frontend** 
+✅ Created backend endpoint for handeling address.
+✅ Created backend endpoint with frontend.
 
