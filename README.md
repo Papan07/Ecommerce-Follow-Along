@@ -166,3 +166,9 @@ If you'd like to contribute:
 ✅ Created backend endpoint for handeling address.
 ✅ Created backend endpoint with frontend.
 
+### **🛠️ Milestone 23: worked on address in frontend and backend** 
+✅ Created placeorder button in cart page and added navigation to select address.
+✅ Create select address page and provided option to select one address.
+✅ Created backend endpoint to sent all address to user.
+
+
