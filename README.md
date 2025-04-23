@@ -171,4 +171,8 @@ If you'd like to contribute:
 ✅ Create select address page and provided option to select one address.
 ✅ Created backend endpoint to sent all address to user.
 
-
+### **🛠️ Milestone 24: worked on address in frontend and backend** 
+✅ Displayed all of products in cart.
+✅ Displayed all address in address section page.
+✅ Diplayed total price in cart
+✅ Added place order button at the button.
