@@ -176,3 +176,8 @@ If you'd like to contribute:
 ✅ Displayed all address in address section page.
 ✅ Diplayed total price in cart
 ✅ Added place order button at the button.
+
+### **🛠️ Milestone 25:
+✅ ⁠Created *endpoint for order*.
+✅ Implemented *mail service* for nodemailer.
+✅ ⁠Handled *address* for delivery.
