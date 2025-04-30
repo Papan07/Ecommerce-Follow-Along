@@ -177,7 +177,12 @@ If you'd like to contribute:
 ✅ Diplayed total price in cart
 ✅ Added place order button at the button.
 
-### **🛠️ Milestone 25:
+### **🛠️ Milestone 25: Worked on order backend and mail service
 ✅ ⁠Created *endpoint for order*.
 ✅ Implemented *mail service* for nodemailer.
 ✅ ⁠Handled *address* for delivery.
+
+### **🛠️ Milestone 26: Worked on order backend and mail service
+✅ Implemented mail with nodemailer
+✅ Sending order details to user via mail
+
