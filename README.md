@@ -183,6 +183,10 @@ If you'd like to contribute:
 ✅ ⁠Handled *address* for delivery.
 
 ### **🛠️ Milestone 26: Worked on order backend and mail service
-✅ Implemented mail with nodemailer
-✅ Sending order details to user via mail
+✅ Implemented mail with nodemailer.
+✅ Sending order details to user via mail.
+
+### **🛠️ Milestone 27: Worked on frontend for my order page.
+✅ Created GET request to get request my order.
+
 
