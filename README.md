@@ -189,4 +189,6 @@ If you'd like to contribute:
 ### **🛠️ Milestone 27: Worked on frontend for my order page.
 ✅ Created GET request to get request my order.
 
+### **🛠️ Milestone 28: Created Order page in frontend**
+✅Added cancel button in my-orders and create an backend endpoint for cancel order.
 
