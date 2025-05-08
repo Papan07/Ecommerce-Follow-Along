@@ -204,3 +204,8 @@ If you'd like to contribute:
 ✅ Created a success page for payment.
 ✅ Created a failure page for payment.
 
+### **🛠️ Milestone 31: Redux Implementation
+✅ Implemented redux in frontend
+✅ Use redux in user details page.
+
+
